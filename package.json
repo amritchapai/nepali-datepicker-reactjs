@@ -41,7 +41,7 @@
         "start": "microbundle-crl watch --no-compress --format modern,cjs --css-modules false",
         "prebuild": "npm clean && npm format",
         "build": "microbundle-crl --no-compress --format modern,cjs --css-modules false",
-        "prepare": "npm build",
+        "prepare": "npm run build",
         "version": "git add -A src",
         "postversion": "git push && git push --tags",
         "predeploy": "cd example && npm install && npm run build",
