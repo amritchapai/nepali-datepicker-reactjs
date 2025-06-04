@@ -39,7 +39,7 @@
         "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
         "test:watch": "react-scripts test --env=jsdom",
         "start": "microbundle-crl watch --no-compress --format modern,cjs --css-modules false",
-        "prebuild": "npm clean && npm format",
+       "prebuild": "npm run clean && npm run format",
         "build": "microbundle-crl --no-compress --format modern,cjs --css-modules false",
         "prepare": "npm run build",
         "version": "git add -A src",
